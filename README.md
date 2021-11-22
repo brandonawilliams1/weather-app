@@ -4,3 +4,4 @@ date info
 temp info
 wind speed
 uv index
+![image](https://user-images.githubusercontent.com/31046919/142862132-72260e87-746f-4e1d-9b36-75f0872adad7.png)

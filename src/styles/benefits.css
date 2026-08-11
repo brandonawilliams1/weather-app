@@ -1,0 +1,107 @@
+.benefits-section {
+  background: linear-gradient(180deg, var(--color-neutral-950) 0%, var(--color-neutral-900) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06), transparent 60%);
+  pointer-events: none;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.benefit-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  padding: 36px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  align-items: center;
+  transition: padding 0.3s ease;
+}
+
+.benefit-row:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.benefit-row:hover {
+  padding-left: 16px;
+}
+
+.benefit-stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.benefit-stat {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-primary-400), var(--color-accent-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.benefit-rank {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-neutral-600);
+  letter-spacing: 0.1em;
+}
+
+.benefit-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--color-neutral-0);
+}
+
+.benefit-desc {
+  font-size: 15px;
+  color: var(--color-neutral-400);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.benefit-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-neutral-600);
+  font-weight: 500;
+}
+
+.benefit-source svg {
+  color: var(--color-success-500);
+}
+
+@media (max-width: 768px) {
+  .benefit-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0;
+  }
+  .benefit-row:hover {
+    padding-left: 0;
+  }
+  .benefit-stat {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,149 @@
+.collage-section {
+  background: var(--color-neutral-900);
+}
+
+.collage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  height: 560px;
+}
+
+.collage-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Advantage cards */
+.advantage-card {
+  padding: 36px 28px;
+  background: linear-gradient(145deg, var(--color-neutral-800), var(--color-neutral-850, #141d2e));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  transition: all 0.35s ease;
+}
+
+.advantage-card:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.advantage-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.08));
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: var(--color-primary-400);
+  transition: all 0.35s ease;
+}
+
+.advantage-card:hover .advantage-icon {
+  background: linear-gradient(135deg, var(--color-primary-600), var(--color-accent-500));
+  color: var(--color-neutral-0);
+  border-color: transparent;
+}
+
+.advantage-label {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-neutral-0);
+}
+
+.advantage-caption {
+  font-size: 14px;
+  color: var(--color-neutral-400);
+  line-height: 1.65;
+}
+
+.advantage-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(59, 130, 246, 0.06), transparent);
+  transition: left 0.6s ease;
+}
+
+.advantage-card:hover .advantage-shine {
+  left: 120%;
+}
+
+/* Truck cards */
+.truck-card {
+  cursor: pointer;
+}
+
+.truck-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.truck-card:hover img {
+  transform: scale(1.06);
+}
+
+.truck-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.85) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  gap: 10px;
+}
+
+.truck-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--color-primary-300);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.truck-card-caption {
+  font-size: 14px;
+  color: var(--color-neutral-200);
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .collage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 640px) {
+  .collage-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    height: auto;
+  }
+  .collage-card {
+    min-height: 220px;
+  }
+}

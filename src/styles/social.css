@@ -1,0 +1,116 @@
+.social-section {
+  background: var(--color-neutral-950);
+  padding-bottom: 0;
+}
+
+.social-header {
+  text-align: center;
+}
+
+.social-header .section-subtitle {
+  margin: 0 auto 56px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px 12px;
+  border-radius: var(--radius-md);
+  background: var(--color-neutral-900);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.3);
+  background: var(--color-neutral-800);
+  box-shadow: var(--shadow-lg);
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--color-neutral-300);
+  transition: color 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+  color: var(--color-primary-400);
+}
+
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.social-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-neutral-200);
+}
+
+.social-cta {
+  font-size: 11px;
+  color: var(--color-neutral-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color 0.3s ease;
+}
+
+.social-card:hover .social-cta {
+  color: var(--color-primary-400);
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 32px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-neutral-300);
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--color-neutral-600);
+}
+
+@media (max-width: 968px) {
+  .social-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .social-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

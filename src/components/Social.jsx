@@ -66,6 +66,3 @@ function SocialIcon({ platform }) {
   };
   return <span className="social-icon">{icons[platform] || null}</span>;
 }
-
-
-export default Social

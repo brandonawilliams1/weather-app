@@ -94,16 +94,13 @@ export const QUOTE_BODY = `We are reaching out to inquire about your LED mobile 
 Campaign Duration: [e.g., 4 weeks / specify dates]
 Coverage Area / Routes: [e.g., downtown business districts, specific neighborhoods, or list of cities]
 Operating Hours: [e.g., 9 AM – 9 PM daily]
-Number of Trucks Required: [e.g., 1–3 units]
 Screen Specifications: [e.g., size, resolution, single or double-sided display]
 Content Format: [e.g., video/animation file format and dimensions to be provided separately]
 Additional Services: [e.g., GPS tracking reports, photo/video proof of operation, audience impression reports]
 
 We would appreciate it if you could include the following in your quotation:
 - Daily/weekly/monthly rental rates
-- Fuel and driver costs (if applicable)
 - Setup or production fees (if any)
-- Available truck models and screen sizes
 - Sample routes or coverage maps for our target area
 - Estimated lead time for booking and deployment
 - Payment terms and cancellation policy

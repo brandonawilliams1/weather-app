@@ -68,11 +68,11 @@ export default function ContactModal({ isOpen, onClose }) {
               <div className="form-row form-row-3">
                 <div className="form-group">
                   <label htmlFor="city">City *</label>
-                  <input id="city" type="text" required placeholder="Austin" />
+                  <input id="city" type="text" required placeholder="Chicago" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="state">State *</label>
-                  <select id="state" required defaultValue="">
+                  <select id="state" required defaultValue="IL">
                     <option value="" disabled>Select</option>
                     {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
                   </select>

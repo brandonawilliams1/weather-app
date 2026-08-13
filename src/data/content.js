@@ -5,7 +5,7 @@ export const IMAGES = {
     gps: 'https://images.pexels.com/photos/9966011/pexels-photo-9966011.jpeg?auto=compress&cs=tinysrgb&w=800',
     analytics: 'https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&w=800',
     creative: 'https://images.pexels.com/photos/13451104/pexels-photo-13451104.jpeg?auto=compress&cs=tinysrgb&w=800',
-    truck1: 'assets/images/led_truck.jpg',
+    truck1: 'assets/images/led_truck2.jpg',
     truck2: 'https://images.pexels.com/photos/13673160/pexels-photo-13673160.jpeg?auto=compress&cs=tinysrgb&w=800',
     truck3: 'https://images.pexels.com/photos/756091/pexels-photo-756091.jpeg?auto=compress&cs=tinysrgb&w=800',
   },

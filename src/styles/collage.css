@@ -98,7 +98,7 @@
 .truck-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.85) 100%);
+  background: linear-gradient(180deg, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.85) 100%), url('/led_truck2.jpg') center / cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

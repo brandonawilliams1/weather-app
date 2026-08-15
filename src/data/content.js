@@ -7,7 +7,7 @@ export const IMAGES = {
     creative: 'https://images.pexels.com/photos/13451104/pexels-photo-13451104.jpeg?auto=compress&cs=tinysrgb&w=800',
     truck1: 'assets/images/led_truck2.jpg',
     truck2: 'assets/images/led_truck3.jpg',
-    truck3: 'assets/images/led_truck3.jpg',
+    truck3: 'assets/images/led_truck4.png
   },
 };
 

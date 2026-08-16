@@ -1,4 +1,4 @@
-import truck1 from '../../assets/images/led_truck2.jpg';
+import truck1 from '../../assets/images/led_truck5.jpg';
 import truck2 from '../../assets/images/led_truck4.png';
 import truck3 from '../../assets/images/led_truck3.jpg';
 

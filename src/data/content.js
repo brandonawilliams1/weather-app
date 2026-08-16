@@ -1,3 +1,7 @@
+import truck1 from '../../assets/images/led_truck2.jpg';
+import truck2 from '../../assets/images/led_truck4.png';
+import truck3 from '../../assets/images/led_truck3.jpg';
+
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/1058276/pexels-photo-1058276.jpeg?auto=compress&cs=tinysrgb&w=1600',
   cta: 'https://images.pexels.com/photos/30169356/pexels-photo-30169356.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -5,9 +9,9 @@ export const IMAGES = {
     gps: 'https://images.pexels.com/photos/9966011/pexels-photo-9966011.jpeg?auto=compress&cs=tinysrgb&w=800',
     analytics: 'https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&w=800',
     creative: 'https://images.pexels.com/photos/13451104/pexels-photo-13451104.jpeg?auto=compress&cs=tinysrgb&w=800',
-    truck1: 'assets/images/led_truck2.jpg',
-    truck2: 'assets/images/led_truck4.png',
-    truck3: 'assets/images/led_truck3.jpg',
+    truck1,
+    truck2,
+    truck3,
   },
 };
 
